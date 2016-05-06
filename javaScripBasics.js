@@ -32,10 +32,11 @@ function reverseNumber(someNumber) {
 // Loops
 console.log("Going to run a loop");
 var numArray = []; // array decleration
-for(var x = 0; x < 10; x++) {
+for(var x = 0; x <= 20; x++) {
   numArray.push(x);
 }
 console.log(numArray.toString());
+console.log("Loop Ended...");
 
 var nameOfMonth = ["January","February"
                             ,"March"
@@ -53,8 +54,8 @@ var nameOfMonth = ["January","February"
 // readline works in Node but prompt works in browser so switch accordingly
 var rl = require("readline");
 var askUser = rl.createInterface(process.stdin, process.stdout);
-askUser.question("Enter number from 0 to 11: ", function(monthNumber) {
-  console.log(nameOfMonth[monthNumber]);
+askUser.question("Enter number of month: ", function(monthNumber) {
+  console.log(nameOfMonth[monthNumber-1]);
   process.exit();
 });
 //var monthNum = prompt("Enter a number from 0 to 11: ");
