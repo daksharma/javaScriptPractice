@@ -49,13 +49,13 @@ var nameOfMonth = ["January","February"
                             ,"November"
                             ,"December"
                           ];
-// prompt only works in console.
+
+// readline works in Node but prompt works in browser so switch accordingly
 var rl = require("readline");
 var askUser = rl.createInterface(process.stdin, process.stdout);
-askUser.question("Enter number from 0 11: ", function(monthNumber) {
+askUser.question("Enter number from 0 to 11: ", function(monthNumber) {
   console.log(nameOfMonth[monthNumber]);
   process.exit();
 });
-//console.log("Enter a number from 0 to 11: ");
-//var monthNum = readline();
+//var monthNum = prompt("Enter a number from 0 to 11: ");
 //console.log(nameOfMonth[monthNum].toString());
