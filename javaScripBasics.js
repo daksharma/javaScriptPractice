@@ -51,6 +51,11 @@ var userNumArray = kindofnumber.split("").map(Number);
 console.log(Number(kindofnumber));
 console.log(userNumArray);
 
+var sentence = "The Quick Brown Fox Jumped Over the Lazy Dog";
+var individualWords = sentence.split(" ");
+for(var c = 0; c < individualWords.length; c++) {
+  console.log("Word " + c + " : " + individualWords[c]);
+}
 
 var nameOfMonth = ["January","February"
                             ,"March"
