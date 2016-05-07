@@ -8,11 +8,11 @@ var userDice2Side;
 console.log("Dice Problem.....\n");
 console.log("Given 2 dices with 6 faces each. (dice is a cube)\n");
 console.log("How would you display the number of the month using the two dice?");
-console.log("ex: 01 first day or month, 15 day on month, so on so forth.\nNo addition or subtraction of the two dices");
-console.log("Each digit is represented by each dice\n");
+console.log("ex: 01 first day of the month, 15 day of the month, etc.\nNo addition or subtraction of the two dices");
+console.log("Each digit is represented by each dice. 6 sides to a dice. 6digit sequence\n");
 
 var diceQuestion = rl.createInterface(process.stdin, process.stdout);
-diceQuestion.question("Enter the sequence of the first dice faces: ", function(dice1Sides) {
+diceQuestion.question("Enter the sequence of the first dice faces (w/o spaces): ", function(dice1Sides) {
   diceQuestion.question("Enter second dice faces sequence: ", function(dice2Sides){
     userDice1Side = dice1Sides.toString().split('').map(Number);
     userDice2Side = dice2Sides.toString().split('').map(Number);
