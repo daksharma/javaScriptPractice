@@ -30,13 +30,27 @@ function reverseNumber(someNumber) {
 
 
 // Loops
-console.log("Going to run a loop");
+console.log("Going to run a for loop");
 var numArray = []; // array decleration
 for(var x = 0; x <= 20; x++) {
   numArray.push(x);
 }
 console.log(numArray.toString());
 console.log("Loop Ended...");
+
+console.log("Going to run a while loop");
+var counter = 0;
+while(counter < 10) {
+  console.log("Counter: " + counter);
+  counter++;
+}
+
+var kindofnumber = "123456456456";
+var userNumArray = kindofnumber.split("").map(Number);
+//userNumArray = Number(kindofnumber.split("").join(""));
+console.log(Number(kindofnumber));
+console.log(userNumArray);
+
 
 var nameOfMonth = ["January","February"
                             ,"March"
