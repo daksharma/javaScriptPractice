@@ -15,9 +15,9 @@ console.log("Video speed is " + rate + " times the normal speed");
 
 // conditions
 if (isTrue) {
-  console.log("The magic of reverse: " + reverseNumber(number));
+  console.log("The magic of reverse: " + reverseNumber(number) + "\n");
 } else {
-  console.log("There must be something wrong with the number");
+  console.log("There must be something wrong with the number\n");
 }
 
 // Function
@@ -28,35 +28,47 @@ function reverseNumber(someNumber) {
   return revNumber;
 }
 
-
+//------------------------------------------
 // Loops
-console.log("Going to run a for loop");
+console.log("Going to run for a loop ;) ");
 var numArray = []; // array decleration
 for(var x = 0; x <= 20; x++) {
   numArray.push(x);
 }
 console.log(numArray.toString());
-console.log("Loop Ended...");
+console.log("Loop Ended...\n");
+//------------------------------------------
 
-console.log("Going to run a while loop");
+
+//------------------------------------------
+
+console.log("Going to run a while...");
 var counter = 0;
 while(counter < 10) {
   console.log("Counter: " + counter);
   counter++;
 }
+console.log("Hey, it's been a while...\n");
+//------------------------------------------
 
-var kindofnumber = "123456456456";
-var userNumArray = kindofnumber.split("").map(Number);
+var kindofnumber = 123456456456;
+console.log("These are Numbers:\t" + kindofnumber)
+var userNumArray = kindofnumber.toString().split("").map(Number);
 //userNumArray = Number(kindofnumber.split("").join(""));
-console.log(Number(kindofnumber));
-console.log(userNumArray);
+console.log("Array of digits:\t" + userNumArray + "\n");
 
-var sentence = "The Quick Brown Fox Jumped Over the Lazy Dog";
+var sentence = "The Sentence: \"The Quick Brown Fox Jumped Over the Lazy Dog\"";
+console.log(sentence);
 var individualWords = sentence.split(" ");
+console.log("Sentence into words:");
 for(var c = 0; c < individualWords.length; c++) {
   console.log("Word " + c + " : " + individualWords[c]);
 }
+console.log("\n");
 
+
+//------------------------------------------
+console.log("Find a Name of the number...");
 var nameOfMonth = ["January","February"
                             ,"March"
                             ,"April"

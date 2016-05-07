@@ -16,13 +16,17 @@ diceQuestion.question("Enter the sequence of the first dice faces: ", function(d
   diceQuestion.question("Enter second dice faces sequence: ", function(dice2Sides){
     userDice1Side = dice1Sides.toString().split('').map(Number);
     userDice2Side = dice2Sides.toString().split('').map(Number);
-    console.log("Dice 1 sequence you entered: " + userDice1Side);
-    console.log("Dice 2 sequence you entered: " + userDice2Side);
-    console.log("Actual sequence: " + dice1side);
-    console.log("Actual sequence: " + dice2side);
+    console.log("");
+    console.log("Dice 1 - You entered:\t" + userDice1Side);
+    console.log("Dice 2 - You entered:\t" + userDice2Side);
+    console.log("");
+    console.log("Actual sequence:\t" + dice1side);
+    console.log("Actual sequence:\t" + dice2side);
+    console.log("");
     if ((userDice1Side.toString() === dice1side.toString()) && (userDice1Side.length === dice1side.length) &&
         (userDice2Side.toString() === dice2side.toString()) && (userDice2Side.length === dice2side.length)) {
-      console.log("You're wondering why, what about 9\nYou can use 6 as a 9 if you flip it (or in this case just twist the dice 180 degrees)");
+      console.log("You're wondering why, what about 9?");
+      console.log("You can use 6 as a 9 if you flip it (or in this case just twist the dice 180 degrees");
     } else {
       console.log("Your sequence was not correct.\nPlease try again!");
     }
