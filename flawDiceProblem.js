@@ -74,6 +74,6 @@ function unique(origArr) {
     return newArr;
 }
 dupRemovedNumbers = unique(actualDays);
-console.log("Duplicates removed----");
+console.log("Duplicates removed----\n");
 console.log("Sorted Numbers:");
 console.log(dupRemovedNumbers.toString().split(',').join("\n"));
