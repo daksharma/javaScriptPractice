@@ -73,11 +73,7 @@ function unique(origArr) {
     }
     return newArr;
 }
-
 dupRemovedNumbers = unique(actualDays);
+console.log("Duplicates removed----");
 console.log("Sorted Numbers:");
 console.log(dupRemovedNumbers.toString().split(',').join("\n"));
-
-
-//console.log(actualDays.toString().split(',').join("\n"));
-//console.log("[" + mergeSort(diceSolution).toString().split(',').join("\n") + "]");
