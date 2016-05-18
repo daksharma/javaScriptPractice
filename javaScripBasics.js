@@ -52,7 +52,7 @@ console.log("Hey, it's been a while...\n");
 //------------------------------------------
 
 var kindofnumber = 123456456456;
-console.log("These are Numbers:\t" + kindofnumber)
+console.log("These are Numbers:\t" + kindofnumber);
 var userNumArray = kindofnumber.toString().split("").map(Number);
 //userNumArray = Number(kindofnumber.split("").join(""));
 console.log("Array of digits:\t" + userNumArray + "\n");
@@ -66,6 +66,10 @@ for(var c = 0; c < individualWords.length; c++) {
 }
 console.log("\n");
 
+var someString = "Is this changed?";
+console.log(someString);
+someString = "this has to be changed";
+console.log(someString);
 
 //------------------------------------------
 console.log("Find a Name of the number...");
