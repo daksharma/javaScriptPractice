@@ -1,7 +1,7 @@
 // Dice Problem
 var rl = require("readline");
-var dice1side = [0,1,2,3,7,8];
-var dice2side = [1,2,3,4,5,6];
+var dice1side = [0,1,2,3,4,5];
+var dice2side = [0,1,2,6,7,8];
 var userDice1Side;
 var userDice2Side;
 

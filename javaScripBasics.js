@@ -71,6 +71,29 @@ console.log(someString);
 someString = "this has to be changed";
 console.log(someString);
 
+
+var numArray = [1,2,3,4,5,6,7,8,9,10];
+for(var count = 0; count < numArray.length; count++) {
+    console.log(numArray[count]);
+}
+
+function doubleNum(sNum) {
+    return sNum * 2;
+}
+var doubleNumArray = [];
+for(var counter = 0; counter < numArray.length; counter++) {
+    doubleNumArray.push(doubleNum(numArray[i]));
+}
+
+var numDoubleNum = {};
+for (var i = 0; (i < numArray.length && i < doubleNumArray.length); i++) {
+    numDoubleNum[numArray[i]] = doubleNum(numArray[i]);
+}
+
+for (var props in numDoubleNum) {
+    console.log(props + " : " + numDoubleNum[props]);
+}
+
 //------------------------------------------
 console.log("Find a Name of the number...");
 var nameOfMonth = ["January","February"
